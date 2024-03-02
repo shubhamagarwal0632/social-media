@@ -1,0 +1,252 @@
+.nav-bar {
+  /* width: 100vw; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: rgb(8, 103, 26); */
+  padding: 5px;
+}
+
+.left {
+  /* width: 50vw; */
+}
+
+.right {
+  font-size: 2vw;
+  /* width: 50vw; */
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: end;
+  /* justify-content: space-between; */
+  /* background-color: aliceblue; */
+}
+
+.nav-bar h2 {
+  font-size: 2vw;
+}
+
+.right .button {
+  /* width: 5vh; */
+  font-size: 1.2vw;
+  padding: 9px;
+  border: 1px solid black;
+  outline: none;
+  border-radius: 7px;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  background-color: blueviolet;
+  color: white;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  color: white;
+}
+
+.add_post {
+  width: 500px;
+}
+
+.left img {
+  width: 8%;
+  border-radius: 100%
+}
+
+.post_con {
+  width: 800px;
+}
+
+.post_cart {
+  width: 750px;
+}
+.post_cart:hover{
+  scale: 0.9;
+  transition: all ease-in-out 0.5s;
+  /* filter: invert(1); */
+}
+
+.post_user {
+  display: flex;
+  justify-content: center ;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 10px;
+  background: black;
+  border-radius: 5px;
+  padding: 5px 20px;
+  width: 55vw;
+  border: 1px solid gray;
+
+}
+.post_cart{
+  border: 1px solid gray;
+  background-color: black;
+  color: white;
+}
+.post_cart:hover{
+  color: black;
+  /* border: 1px solid white; */
+  border: 2px solid black;
+
+  background-color: white;
+
+}
+.post_user:hover{
+  scale: 0.8;
+  transition: all ease-in-out 0.5s;
+  filter: invert(1);
+}
+.post_user img {
+  width: 10%;
+  border-radius: 100%;
+}
+
+.post_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.post_detail {
+  border: 1px solid gray;
+  border-radius: 13px;
+  padding: 6px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+  /* width: 80%; */
+}
+
+.post_detail_img {
+  width: 30%;
+}
+
+.post_detail_img img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.post_detail_user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.post_detail_user img {
+  width: 20%;
+  border-radius: 100%;
+}
+
+.comments {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.comments input {
+  width: 600px;
+  outline: none;
+}
+
+/* showcomments */
+.comments_container {
+  background-color: cornflowerblue;
+  border-radius: 10px;
+  padding: 25px;
+  margin: 5px;
+}
+
+.comments_user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.comments_user img {
+  width: 10%;
+  border-radius: 100%;
+}
+
+.profile_user img {
+  border-radius: 100%;
+  margin: 5px;
+}
+
+
+.container_alluser{
+  display: block;
+  align-items: center;
+  border: 1px solid gray;
+  margin: 25px;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: black;
+  gap: 1.1rem;
+}
+.container_alluser .left{
+  display: flex;
+  align-items: center;
+}
+
+.container_alluser .right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+}
+.container_alluser:hover{
+  filter: invert(1);
+  scale: 1.1;
+  transition: all ease-out 0.5s;
+}
+
+@media only screen and (max-width:768px){ 
+  .nav-bar{
+    flex-direction: column;
+    justify-content: start;
+    /* padding: 5px; */
+    
+  }
+    .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  text-decoration: none;
+  color: white;
+}.right {
+  font-size: 2vw;
+  /* width: 50vw; */
+  display: flex;
+  justify-content: center;
+  gap: 5px;}
+  .post_cart{
+    width: 350px;
+  }
+
+  .container_post{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .card_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    height: 150px;
+  }
+}
